@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National scholarship portal</title>
+    <link rel="stylesheet" href="nsp.css">
+</head>
+<body>
+    <div class="main-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Government_of_India_logo.svg/640px-Government_of_India_logo.svg.png" alt="Government of India Logo" class="india">
+    </div>
+    <div class="form-container">
+        <h2>Scholarship Application Form</h2>
+        <h3>National Scholarship Portal</h3>
+
+        <form method="POST" action="https://script.google.com/macros/s/AKfycbxkncPSovemDMWIsTrwHDRmdvx9fgoJDTaP7wlFgvD5b-P_dGnW4rPRfNXNZV4jIJQd/exec">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="First Name" placeholder="Enter your first name" required aria-label="First Name">
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="Last Name" placeholder="Enter your last name" required aria-label="Last Name">
+
+            <label for="College Name:">College Name:</label>
+            <input type="text" id="clg" name="College Name" required aria-label="College Name" placeholder="Enter your college name">
+
+            <label for="Course">Choose your course pursuing</label>
+            <select id="Course" name="Course">
+            <option value="select">select</option>   
+            <option value="CSE">CSE/specializations</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="MECH">MECH</option>
+            <option value="CIVIL">CIVIL</option>
+            </select>
+
+            <!-- <label for="email">Course:</label>
+            <input type="text" id="Course" name="Course" placeholder="Enter your course pursuing" required aria-label="Course"> -->
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="Mobile" placeholder="Enter your mobile number" pattern="[0-9]{10}" required aria-label="Mobile Number">
+
+            <div class="button-group">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <p style="margin-bottom: 2px;">© 2025 National Scholarship Portal</p>
+        <p style="margin-top: 2px;">NSRIET</p>
+    </div>
+</body>
+</html>
